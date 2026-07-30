@@ -23,7 +23,31 @@ Custom Meme Backdrop & Welcome Experience: A tailored visual environment featuri
 # How to Run It Locally
 TripleT-OS is built using standard web technologies (HTML5, CSS3, and Vanilla JavaScript), making local development straightforward.
 
-# Step 1:
+# Step 1: CLone
 
-git clone https://github.com/Bhav531/TripleT-OS.git
+git clone https://github.com/Bhav531/TripleT-OS..git
 cd TripleT-OS.
+
+
+# Step 2: Open in VSC
+
+code .
+
+# Step 3 - Launch
+
+# How It Works
+To achieve the tactile feel of a desktop operating system without relying on heavyweight frontend frameworks, TripleT-OS is engineered using pure Vanilla JavaScript and native DOM manipulation.
+
+Window Management & Drag Physics: Window dragging is powered by custom mouse event listeners (mousedown, mousemove, and mouseup). When a window's title bar is clicked, the script calculates the relative offset between the cursor position and the window's top-left coordinates, updating position: absolute styling in real-time without layout thrashing.
+
+Focus Stacking: To mimic traditional OS behavior where clicking a background window brings it to the forefront, the project dynamically manages a stacking counter that increments and applies the highest z-index to whichever application window currently holds user focus.
+
+Lightweight Application Architecture: Each app (TUNG Notes and TUNG Photos) operates as an isolated component within the DOM, allowing multiple windows to remain open simultaneously without interfering with the system clock or desktop event loops.
+
+
+# Credits
+Creator & Lead Developer: Bhav Kartik Jindal
+
+Development Environment: Built with Visual Studio Code
+
+Inspiration: Inspired by the Tung Tung Sahur meme universe and classic desktop UI metaphors.
