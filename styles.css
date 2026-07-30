@@ -1,0 +1,251 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+body{
+    background-color: black;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.intro {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+    font-family: 'Jersey 10 Charted', sans-serif;   
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.25); color: #fff;
+    backdrop-filter: blur(10px);
+}
+
+.welcome,
+.window {
+    display: block;
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 10px;    
+    font-family: 'Outfit', sans-serif;
+    background-color: rgba(0, 0, 0, 0.25); color: #fff;
+}
+
+.welcome {
+    top: 140px;
+    left: 30%;
+    max-width: 600px;
+    width: 60%;
+}
+
+.window {
+    top: calc(50% - 240px);
+    left: calc(50% - 260px);
+    width: 520px;
+    height: 540px;
+    overflow: hidden;
+    display: block;
+    z-index: 2;
+}
+
+.welcome1header{
+    font-family: 'Bitcount Grid Single', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+    background-color: red;
+    border-radius: 50px;
+
+
+}
+
+.open {
+    cursor: pointer;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: blue;
+    height: 40px;
+    cursor: move;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.notes-app {
+    display: flex;
+    background-color: #fff;
+    margin: 6px;
+    border-radius: 12px;
+    width: calc(100% - 12px);
+    height: calc(100% - 56px);
+    box-sizing: border-box;
+    color: #000;
+    overflow: hidden;
+    border: 2px solid #d0d0d0;
+}
+
+.notes-sidebar {
+    width: 160px;
+    background: #f3f3f3;
+    padding: 12px;
+    border-right: 1px solid #d0d0d0;
+}
+
+.notes-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.notes-toolbar {
+    padding: 10px 12px;
+    border-bottom: 1px solid #d0d0d0;
+    font-weight: 600;
+    background: #fafafa;
+}
+
+.notes-editor {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 14px;
+    resize: none;
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+    background: #fff;
+}
+
+.photos-app {
+    background: #fff;
+    margin: 6px;
+    border-radius: 12px;
+    width: calc(100% - 12px);
+    height: calc(100% - 56px);
+    box-sizing: border-box;
+    padding: 16px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: start;
+}
+
+.photo-tile {
+    background: linear-gradient(135deg, #e8e8e8, #cfcfcf);
+    border: 2px dashed #999;
+    border-radius: 10px;
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform: scale(0.98);
+    transition: transform 0.2s ease;
+}
+
+.photo-tile img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.closebutton {
+    position: absolute;
+    left: 10px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: red;
+    cursor: pointer;
+}
+
+.headertext {
+    margin: 0;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
+
+.app1{
+    padding-top: 64px;
+    padding-left: 16px;
+}
+
+.app1-div{
+    text-align: center;
+    padding: 16px;
+    filter: drop-shadow(0 0 8px black);
+    width: fit-content;
+
+}
+
+.app1-img{
+    width: 175px;
+    height: 175px;
+    border-radius: 16px;
+}
+
+.app1-text{
+    margin: 0px;
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    font-size: 26px;
+}
+
+#newApp {
+    opacity: 0.8;
+    transform: scale(0.9);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+#newApp:hover {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.selected{
+    width: 175px;
+    height: 175px;
+    border-radius: 16px;
+    filter: drop-shadow(0 0 8px white);
+    border: 12px solid white;
+}

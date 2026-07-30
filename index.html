@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripleT-OS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Jersey+10+Charted&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main-con">
+        
+        <div class="background">
+        <img src="final_t3.png" alt="Background Image">
+        </div>
+        <div class="intro">
+           <p id="welcomeopen" class="open">TripleT-OS</p>    
+           <p id="timeElement">
+            Time
+           </p>
+        </div>
+        <div class="welcome" id="welcome1">
+            <div class="header">
+                <p id="welcome1header">
+                TripleT-OS
+                </p>
+            </div>
+            <p class="close" id="welcomeclose">Close</p>
+            <p>Welcome to TripleT-OS!</p>
+            <br>
+            <p>TripleT-OS is an exquisitely-woven and meticulously-crafted operating system that serves as an epochal testament to the PRESTIGE OF THE KING HIMSELF - the one and only - TRIPLE T!!</p>
+        </div>  
+        <div id="desktopApps" class="app1">
+            <div id="tungNotesApp" class="app1-div">
+                <img src="tnotes.jpg" class="app1-img">
+                <p class="app1-text">TUNG Notes</p>
+            </div>
+            <div id="newApp" class="app1-div">
+                <img src="tnotes.jpg" class="app1-img">
+                <p class="app1-text">TUNG Photos</p>
+            </div>
+        </div>
+        <div class="window" id="notes" style="top: calc(50% - 240px); left: calc(50% - 260px); display: none;">
+            <div class="header" id="notesheader">
+                <div class="closebutton" id="notesclose"></div>
+                <p class="headertext">Notes</p>
+                <div style="width: 16px; margin-right: 6px; height: 16px;"></div>
+            </div>
+            <div id="notesContent" class="notes-app">
+                <aside class="notes-sidebar">
+                    <h3>Folders</h3>
+                    <p>• My Notes</p>
+                    <p>• Recent</p>
+                    <p>• Starred</p>
+                </aside>
+                <div class="notes-main">
+                    <div class="notes-toolbar">
+                        <span>Untitled Note</span>
+                        <span>{{pro tip: click on TripleT-OS on the top bar}}</span>
+                    </div>
+                    <textarea class="notes-editor" placeholder="Start typing here..."></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="window" id="photos" style="display: none;">
+            <div class="header" id="photosheader">
+                <div class="closebutton" id="photosclose"></div>
+                <p class="headertext">Photos</p>
+                <div style="width: 16px; margin-right: 6px; height: 16px;"></div>
+            </div>
+            <div class="photos-app">
+                <div class="photo-grid">
+                    <div class="photo-tile">
+                        <img src="1.jpg" alt="Photo 1">
+                    </div>
+                    <div class="photo-tile">
+                        <img src="2.jpg" alt="Photo 2">
+                    </div>
+                    <div class="photo-tile">
+                        <img src="3.jpg" alt="Photo 3">
+                    </div>
+                    <div class="photo-tile">
+                        <img src="4.jpg" alt="Photo 4">
+                    </div>
+                    <div class="photo-tile">
+                        <img src="5.jpg" alt="Photo 5">
+                    </div>
+                    <div class="photo-tile">
+                        <img src="6.png" alt="Photo 6">
+                    </div>
+                    <div class="photo-tile">
+                        <img src="7.jpg" alt="Photo 7">
+                    </div>
+                    <div class="photo-tile">
+                        <img src="8.jpg" alt="Photo 8">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
